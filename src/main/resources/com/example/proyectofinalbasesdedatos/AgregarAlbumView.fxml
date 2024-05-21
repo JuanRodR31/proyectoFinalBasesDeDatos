@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.AgregarAlbumController">
+    <children>
+        <Label layoutX="94.0" layoutY="90.0" text="QUE TIPO DE ALBUM DESEA AGREGAR">
+            <font>
+                <Font name="Bodoni MT" size="13.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="tipoChoiceBox" layoutX="365.0" layoutY="86.0" onMouseClicked="#buscarTipos" prefWidth="150.0" />
+        <Label layoutX="198.0" layoutY="135.0" text="INGRESE EL NOMBRE">
+            <font>
+                <Font name="Bodoni MT" size="13.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nombreTextField" layoutX="365.0" layoutY="131.0" />
+        <Label layoutX="177.0" layoutY="218.0" prefHeight="17.0" prefWidth="184.0" text="EMPRESA DISCOGRAFICA">
+            <font>
+                <Font name="Bodoni MT" size="13.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="empresaDiscograficaChoiceBox" layoutX="365.0" layoutY="214.0" onMouseClicked="#buscarEmpresasDiscograficas" prefWidth="150.0" />
+        <Label layoutX="97.0" layoutY="184.0" prefHeight="17.0" prefWidth="266.0" text="INGRESE LA FECHA  DE LANZAMIENTO">
+            <font>
+                <Font name="Bodoni MT" size="13.0" />
+            </font>
+        </Label>
+        <Label layoutX="126.0" layoutY="32.0" prefHeight="22.0" prefWidth="349.0" text="AGREGRAR ALBUM/EP COMPLETO" textFill="#c90505">
+            <font>
+                <Font name="Bodoni MT" size="18.0" />
+            </font>
+        </Label>
+        <Button fx:id="agregarAlbum" layoutX="268.0" layoutY="273.0" mnemonicParsing="false" onAction="#agregarAlbum" text="Agregar" textFill="#a41111">
+            <font>
+                <Font name="Bodoni MT" size="14.0" />
+            </font>
+        </Button>
+      <DatePicker fx:id="fechaTextField" layoutX="365.0" layoutY="180.0" />
+    </children>
+</AnchorPane>

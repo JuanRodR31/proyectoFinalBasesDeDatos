@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VistasController">
+    <children>
+        <Label layoutX="121.0" layoutY="48.0" prefHeight="42.0" prefWidth="360.0" text="SELECCIONE UNA OPCION" textAlignment="CENTER" textFill="#cd2323" underline="true">
+            <font>
+                <Font name="Bodoni MT" size="27.0" />
+            </font>
+        </Label>
+        <Button layoutX="209.0" layoutY="110.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" text="Buscar Cancion">
+            <font>
+                <Font name="Bodoni MT" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="209.0" layoutY="155.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" text="Agregar Cancion">
+            <font>
+                <Font name="Bodoni MT" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="163.0" layoutY="200.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="274.0" text="Modificar Lista de Reproduccion">
+            <font>
+                <Font name="Bodoni MT" size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="209.0" layoutY="250.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="183.0" text="Reproducir Cancion">
+            <font>
+                <Font name="Bodoni MT" size="14.0" />
+            </font>
+        </Button>
+      <Button layoutX="471.0" layoutY="330.0" mnemonicParsing="false" onAction="#loginView" text="Cerrar sesión" />
+    </children>
+</AnchorPane>

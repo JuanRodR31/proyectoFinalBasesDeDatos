@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.VistasController">
+    <children>
+        <Label layoutX="71.0" layoutY="71.0" prefHeight="42.0" prefWidth="458.0" text="SELECCIONE UNA OPCION" textAlignment="CENTER" underline="true">
+            <font>
+                <Font name="Bodoni MT" size="33.0" />
+            </font>
+        </Label>
+        <Label layoutX="273.0" layoutY="120.0" />
+        <Button layoutX="194.0" layoutY="151.0" mnemonicParsing="false" onAction="#agregarInterpreteView" text="Agregar Artista">
+            <font>
+                <Font name="Bodoni MT" size="22.0" />
+            </font>
+        </Button>
+        <Button layoutX="151.0" layoutY="220.0" mnemonicParsing="false" onAction="#agregarAlbumView" text="Agregar Album/Episodio">
+            <font>
+                <Font name="Bodoni MT" size="22.0" />
+            </font>
+        </Button>
+      <Button layoutX="484.0" layoutY="337.0" mnemonicParsing="false" onAction="#loginView" text="Cerrar sesión" />
+    </children>
+</AnchorPane>

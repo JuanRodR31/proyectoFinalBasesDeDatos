@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.BuscarCancionController">
+    <children>
+        <ListView fx:id="ListaBuscarCancion" layoutX="193.0" layoutY="83.0" onMouseClicked="#cancionSeleccionada" prefHeight="264.0" prefWidth="200.0" />
+        <Label layoutX="148.0" layoutY="31.0" text="Resutados de busqueda  " textFill="#0b4d80">
+            <font>
+                <Font name="Bodoni MT" size="28.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

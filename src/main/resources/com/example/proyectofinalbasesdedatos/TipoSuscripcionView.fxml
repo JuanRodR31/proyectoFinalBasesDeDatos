@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.TipoSuscripcionController">
+   <children>
+      <Label layoutX="34.0" layoutY="39.0" text="Felicidades, su usuario fue creado con éxito">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="164.0" layoutY="118.0" text="Elija el tipo de suscripción">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="78.0" layoutY="257.0" mnemonicParsing="false" onAction="#menuUsuarioView" text="Gratuita" />
+      <Button layoutX="347.0" layoutY="263.0" mnemonicParsing="false" text="Individual" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladores.AgregarInterpreteController">
+    <children>
+        <Label layoutX="110.0" layoutY="47.0" text="INGRESE LOS DATOS DEL ARTISTA NUEVO">
+            <font>
+                <Font name="Bookman Old Style" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="110.0" layoutY="122.0" prefHeight="17.0" prefWidth="109.0" text="Nombre Real =">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nombreTextField" layoutX="248.0" layoutY="118.0" />
+        <Label layoutX="81.0" layoutY="157.0" prefHeight="17.0" prefWidth="138.0" text="Nombre Artistico =">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="nombreArtisticoTextField" layoutX="248.0" layoutY="153.0" />
+        <Label layoutX="81.0" layoutY="192.0" prefHeight="17.0" prefWidth="138.0" text="             Pais=">
+            <font>
+                <Font name="Bookman Old Style" size="14.0" />
+            </font>
+        </Label>
+      <Button layoutX="414.0" layoutY="313.0" mnemonicParsing="false" onAction="#agregarArtista" text="Guardar" />
+      <ChoiceBox fx:id="paisChoiceBox" layoutX="248.0" layoutY="188.0" onMouseClicked="#buscarPaises" prefWidth="150.0" />
+      <Button layoutX="48.0" layoutY="301.0" mnemonicParsing="false" onAction="#menuAdministradorView" text="Volver al menú principal" />
+    </children>
+</AnchorPane>
