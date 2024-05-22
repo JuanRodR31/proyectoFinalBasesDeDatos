@@ -35,4 +35,11 @@ public class MenuAdministradorController {
         stage.setScene(scene);
         stage.show();
     }
+    public void mostrarDatosAuditoriaView (ActionEvent event) throws  IOException{
+        root = FXMLLoader.load(getClass().getResource("com/example/proyectofinalbasesdedatos/MostrarModificacionesView.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }

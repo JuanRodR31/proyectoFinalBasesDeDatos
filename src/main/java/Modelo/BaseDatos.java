@@ -6,6 +6,8 @@ import javafx.scene.control.Alert;
 
 import java.security.MessageDigest;
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BaseDatos {
     public Usuario buscarUsuario(String username, String password){
@@ -392,6 +394,27 @@ public class BaseDatos {
         }
         return idAlbum;
     }
+    public List<Auditoria> obtenerDatosTablaAuditoria() {
+        List<Auditoria> auditoriaList = new ArrayList<>();
+        String sql = "SELECT elemento_id, tabla, operacion, fecha_hora FROM auditoria";
+
+        try (Connection conex = DriverManager.getConnection(ConnectionDB.THINCONN, ConnectionDB.USERNAME, ConnectionDB.PASSWORD);
+             PreparedStatement ps = conex.prepareStatement(sql);
+             ResultSet rs = ps.executeQuery()) {
+
+            while (rs.next()) {
+                int elementoId = rs.getInt("elemento_id");
+                String tabla = rs.getString("tabla");
+                String operacion = rs.getString("operacion");
+                Timestamp fechaHora = rs.getTimestamp("fecha_hora");
+                auditoriaList.add(new Auditoria(elementoId, tabla, operacion, fechaHora));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return auditoriaList;
+    }
+
     /*
     public ObservableList<Cancion> buscarCanciones(String cancion){
         ObservableList<Cancion> canciones = FXCollections.observableArrayList();

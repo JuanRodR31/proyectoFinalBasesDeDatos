@@ -91,4 +91,14 @@ public class VistasController {
         stage.setScene(scene);
         stage.show();
     }
+    public void mostrarDatosAuditoriaView (ActionEvent event) throws  IOException{
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("com/example/proyectofinalbasesdedatos/MostrarModificacionesView.fxml"));
+        Parent root = loader.load();
+
+
+        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Scene scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
+    }
 }
